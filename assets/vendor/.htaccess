@@ -1,0 +1,9 @@
+# Third-party library code (PHPMailer) — only send-quote.php should ever
+# load these, via require(), never a direct browser request.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

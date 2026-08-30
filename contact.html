@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+<html lang="en" data-cursor="c1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a quote from BISliv for building construction, interior design or solar solutions.">
+
+  <title>Get a Quote - BISliv</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/magnific-popup.css">
+  <link rel="stylesheet" href="assets/animate.min.css">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/style.css?v=1.0">
+  <link rel="stylesheet" href="assets/header-custom.css">
+  <link rel="stylesheet" href="assets/footer-custom.css">
+  <link rel="stylesheet" href="assets/scroll-top-custom.css">
+  <link rel="stylesheet" href="assets/quote-form.css">
+
+</head>
+
+
+<body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
+
+  <!-- custom-cursor -->
+  <div class="custom-cursor">
+    <img src="assets/images/cursor.svg" alt="cursor" id="cursorImg">
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+    <svg class="progress-wrap__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </div>
+
+  <!-- cursorAnimation start -->
+  <div class="cursor-wrapper relative">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+  </div>
+  <!-- cursorAnimation end -->
+
+  <!-- side toggle start -->
+  <aside class="fix">
+    <div class="side-info">
+      <div class="side-info-content">
+        <div class="offset-widget offset-header">
+          <div class="offset-logo">
+            <a href="index.html">
+              <img src="assets/images/" alt="site logo">
+            </a>
+          </div>
+          <button id="side-info-close" class="side-info-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mobile-menu d-xl-none fix"></div>
+        <div class="offset-button">
+          <a href="contact.html" class="rr-btn hover-bg-theme">
+            <span class="btn-wrap">
+              <span class="text-one">Get Quote</span>
+              <span class="text-two">Get Quote</span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+  <div class="offcanvas-overlay"></div>
+  <!-- side toggle end -->
+
+  <!-- Header area start -->
+  <header class="header-area">
+    <div class="header-main">
+      <div class="container large">
+        <div class="header-area__inner">
+          <div class="header__left">
+            <div class="header__logo">
+              <a href="index.html">
+                <img src="assets/images/logo-bisliv.svg" class="normal-logo" alt="Site Logo" width="100" height="80">
+              </a>
+            </div>
+          </div>
+
+          <div class="header__right">
+            <div class="header__nav d-none d-xl-flex">
+              <nav class="main-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__whatsapp">
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="header__button">
+              <a href="contact.html" class="rr-btn hover-bg-theme">
+                <span class="btn-wrap">
+                  <span class="text-one">Get Quote</span>
+                  <span class="text-two">Get Quote</span>
+                </span>
+              </a>
+            </div>
+            <div class="header__navicon d-xl-none">
+              <button class="side-toggle">
+                <i class="fa-solid fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header area end -->
+
+  <!-- Mobile sticky CTA bar (WhatsApp + Get Quote) start -->
+  <div class="mobile-sticky-cta">
+    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta__whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+      </svg>
+    </a>
+    <a href="contact.html" class="mobile-sticky-cta__quote rr-btn hover-bg-theme">
+      <span class="btn-wrap">
+        <span class="text-one">Get Quote</span>
+        <span class="text-two">Get Quote</span>
+      </span>
+    </a>
+  </div>
+  <!-- Mobile sticky CTA bar end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <main>
+
+        <!-- quote hero area start -->
+        <section class="quote-hero-area">
+          <div class="container large">
+            <div class="quote-hero-inner">
+              <div class="section-header">
+                <span class="section-subtitle">Request a Quote</span>
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h1 class="section-title font-instrumentsans-medium">Get a Quote</h1>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="text">Tell us about your project and requirements. Our team will review the details and
+                    get in touch with you to discuss the next steps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- quote hero area end -->
+
+        <!-- quote form area start -->
+        <section class="quote-form-area">
+          <div class="container large">
+            <div class="quote-form-area-inner">
+              <div class="quote-form-wrap">
+
+                <div id="qFormShell">
+                  <!-- progress bar -->
+                  <ol class="quote-progress" aria-label="Quote form progress">
+                    <li class="quote-progress-step" data-step="1">
+                      <span class="quote-progress-circle"><span class="quote-progress-num">1</span><i
+                          class="fa-solid fa-check" aria-hidden="true"></i></span>
+                      <span class="quote-progress-label">Contact</span>
+                    </li>
+                    <li class="quote-progress-step" data-step="2">
+                      <span class="quote-progress-circle"><span class="quote-progress-num">2</span><i
+                          class="fa-solid fa-check" aria-hidden="true"></i></span>
+                      <span class="quote-progress-label">Service</span>
+                    </li>
+                    <li class="quote-progress-step" data-step="3">
+                      <span class="quote-progress-circle"><span class="quote-progress-num">3</span><i
+                          class="fa-solid fa-check" aria-hidden="true"></i></span>
+                      <span class="quote-progress-label">Details</span>
+                    </li>
+                    <li class="quote-progress-step" data-step="4">
+                      <span class="quote-progress-circle"><span class="quote-progress-num">4</span><i
+                          class="fa-solid fa-check" aria-hidden="true"></i></span>
+                      <span class="quote-progress-label">Budget</span>
+                    </li>
+                    <li class="quote-progress-step" data-step="5">
+                      <span class="quote-progress-circle"><span class="quote-progress-num">5</span><i
+                          class="fa-solid fa-check" aria-hidden="true"></i></span>
+                      <span class="quote-progress-label">Finish</span>
+                    </li>
+                  </ol>
+
+                  <p id="qStepStatus" class="quote-step-status" aria-hidden="true"></p>
+                  <div id="qStepAnnounce" class="quote-sr-only" aria-live="polite"></div>
+
+                  <div id="qErrorSummary" class="quote-error-summary" role="alert" aria-live="assertive" hidden>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                    <span id="qErrorSummaryText"></span>
+                  </div>
+
+                  <form id="quoteForm" novalidate method="post" action="send-quote.php" enctype="multipart/form-data">
+
+                    <!-- Honeypot: hidden from real visitors, bots tend to fill every field. -->
+                    <div style="position:absolute;left:-9999px;top:-9999px;opacity:0;" aria-hidden="true">
+                      <label for="qWebsite">Leave this field empty</label>
+                      <input type="text" id="qWebsite" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <!-- Step 1: Contact Details -->
+                    <div class="quote-step" data-step="1">
+                      <h2 class="quote-step-title">Contact Details</h2>
+                      <p class="quote-step-desc">Let's start with how our team can reach you.</p>
+
+                      <div class="quote-field-grid">
+                        <div class="quote-field">
+                          <label class="quote-label" for="qFullName">Full Name <span
+                              class="quote-required">*</span></label>
+                          <input type="text" id="qFullName" name="fullName" class="quote-input"
+                            placeholder="Your full name" autocomplete="name" required
+                            aria-describedby="qFullNameError">
+                          <span class="quote-error-msg" id="qFullNameError"><i class="fa-solid fa-circle-exclamation"
+                              aria-hidden="true"></i><span></span></span>
+                        </div>
+                        <div class="quote-field">
+                          <label class="quote-label" for="qPhone">Phone Number <span
+                              class="quote-required">*</span></label>
+                          <input type="tel" id="qPhone" name="phone" class="quote-input"
+                            placeholder="e.g. +91 98765 43210" autocomplete="tel" required
+                            aria-describedby="qPhoneError">
+                          <span class="quote-error-msg" id="qPhoneError"><i class="fa-solid fa-circle-exclamation"
+                              aria-hidden="true"></i><span></span></span>
+                        </div>
+                        <div class="quote-field">
+                          <label class="quote-label" for="qEmail">Email Address <span
+                              class="quote-required">*</span></label>
+                          <input type="email" id="qEmail" name="email" class="quote-input"
+                            placeholder="you@example.com" autocomplete="email" required
+                            aria-describedby="qEmailError">
+                          <span class="quote-error-msg" id="qEmailError"><i class="fa-solid fa-circle-exclamation"
+                              aria-hidden="true"></i><span></span></span>
+                        </div>
+                        <div class="quote-field">
+                          <label class="quote-label" for="qCity">City / Location <span
+                              class="quote-required">*</span></label>
+                          <input type="text" id="qCity" name="city" class="quote-input"
+                            placeholder="e.g. Bengaluru" autocomplete="address-level2" required
+                            aria-describedby="qCityError">
+                          <span class="quote-error-msg" id="qCityError"><i class="fa-solid fa-circle-exclamation"
+                              aria-hidden="true"></i><span></span></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Step 2: Service selection -->
+                    <div class="quote-step" data-step="2" hidden>
+                      <h2 class="quote-step-title">What Service Do You Need?</h2>
+                      <p class="quote-step-desc">Select one or more services — the next step will only ask about
+                        what you pick.</p>
+
+                      <fieldset class="quote-service-grid">
+                        <legend class="quote-sr-only">Select the service(s) you need</legend>
+
+                        <label class="quote-service-card">
+                          <input type="checkbox" name="service" value="construction" id="qServiceConstruction">
+                          <span class="quote-service-icon"><i class="fa-solid fa-building"
+                              aria-hidden="true"></i></span>
+                          <span class="quote-service-body">
+                            <span class="quote-service-name">Building Construction</span>
+                            <span class="quote-service-desc">New builds and turnkey construction.</span>
+                          </span>
+                          <span class="quote-service-check"><i class="fa-solid fa-check"
+                              aria-hidden="true"></i></span>
+                        </label>
+
+                        <label class="quote-service-card">
+                          <input type="checkbox" name="service" value="interior" id="qServiceInterior">
+                          <span class="quote-service-icon"><i class="fa-solid fa-couch" aria-hidden="true"></i></span>
+                          <span class="quote-service-body">
+                            <span class="quote-service-name">Interior Design</span>
+                            <span class="quote-service-desc">Full home, room or office interiors.</span>
+                          </span>
+                          <span class="quote-service-check"><i class="fa-solid fa-check"
+                              aria-hidden="true"></i></span>
+                        </label>
+
+                        <label class="quote-service-card">
+                          <input type="checkbox" name="service" value="solar" id="qServiceSolar">
+                          <span class="quote-service-icon"><i class="fa-solid fa-solar-panel"
+                              aria-hidden="true"></i></span>
+                          <span class="quote-service-body">
+                            <span class="quote-service-name">Solar Solutions</span>
+                            <span class="quote-service-desc">Rooftop solar for home or business.</span>
+                          </span>
+                          <span class="quote-service-check"><i class="fa-solid fa-check"
+                              aria-hidden="true"></i></span>
+                        </label>
+
+                        <label class="quote-service-card">
+                          <input type="checkbox" name="service" value="renovation" id="qServiceRenovation">
+                          <span class="quote-service-icon"><i class="fa-solid fa-hammer"
+                              aria-hidden="true"></i></span>
+                          <span class="quote-service-body">
+                            <span class="quote-service-name">Renovation</span>
+                            <span class="quote-service-desc">Upgrade or remodel an existing space.</span>
+                          </span>
+                          <span class="quote-service-check"><i class="fa-solid fa-check"
+                              aria-hidden="true"></i></span>
+                        </label>
+
+                        <label class="quote-service-card">
+                          <input type="checkbox" name="service" value="other" id="qServiceOther">
+                          <span class="quote-service-icon"><i class="fa-solid fa-ellipsis"
+                              aria-hidden="true"></i></span>
+                          <span class="quote-service-body">
+                            <span class="quote-service-name">Other</span>
+                            <span class="quote-service-desc">Not sure, or something else in mind.</span>
+                          </span>
+                          <span class="quote-service-check"><i class="fa-solid fa-check"
+                              aria-hidden="true"></i></span>
+                        </label>
+                      </fieldset>
+
+                      <span class="quote-standalone-error" id="qServiceError" hidden><i
+                          class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><span>Please select at least
+                          one service.</span></span>
+                    </div>
+
+                    <!-- Step 3: Project details (conditional) -->
+                    <div class="quote-step" data-step="3" hidden>
+                      <h2 class="quote-step-title">Project Details</h2>
+                      <p class="quote-step-desc">Just the details relevant to what you selected.</p>
+
+                      <div id="qNoDetailsNote" class="quote-no-details" hidden>
+                        We'll ask more about your project on the call. Feel free to skip ahead — or add anything
+                        useful in the notes at the end.
+                      </div>
+
+                      <!-- Building Construction -->
+                      <div class="quote-subsection" data-service="construction" hidden>
+                        <div class="quote-subsection-head">
+                          <span class="quote-subsection-icon"><i class="fa-solid fa-building"
+                              aria-hidden="true"></i></span>
+                          <h3 class="quote-subsection-title">Building Construction</h3>
+                        </div>
+
+                        <div class="quote-field-grid">
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Property Type <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Property type">
+                              <label class="quote-pill"><input type="radio" name="propertyTypeConstruction"
+                                  value="Residential"><span>Residential</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeConstruction"
+                                  value="Commercial"><span>Commercial</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeConstruction"
+                                  value="Villa"><span>Villa</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeConstruction"
+                                  value="Apartment"><span>Apartment</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeConstruction"
+                                  value="Other"><span>Other</span></label>
+                            </div>
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qPlotArea">Plot / Built-up Area</label>
+                            <input type="text" id="qPlotArea" name="plotArea" class="quote-input"
+                              placeholder="e.g. 2400 sq.ft">
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qFloors">Number of Floors</label>
+                            <input type="text" id="qFloors" name="floors" class="quote-input" placeholder="e.g. G+2">
+                          </div>
+                          <div class="quote-field is-full">
+                            <label class="quote-label" for="qConstructionLocation">Project Location</label>
+                            <input type="text" id="qConstructionLocation" name="projectLocationConstruction"
+                              class="quote-input" placeholder="Site address / area">
+                          </div>
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Construction Stage <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Construction stage">
+                              <label class="quote-pill"><input type="radio" name="constructionStage"
+                                  value="Planning Stage"><span>Planning Stage</span></label>
+                              <label class="quote-pill"><input type="radio" name="constructionStage"
+                                  value="Design Completed"><span>Design Completed</span></label>
+                              <label class="quote-pill"><input type="radio" name="constructionStage"
+                                  value="Construction Started"><span>Construction Started</span></label>
+                              <label class="quote-pill"><input type="radio" name="constructionStage"
+                                  value="Renovation"><span>Renovation</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Interior Design -->
+                      <div class="quote-subsection" data-service="interior" hidden>
+                        <div class="quote-subsection-head">
+                          <span class="quote-subsection-icon"><i class="fa-solid fa-couch"
+                              aria-hidden="true"></i></span>
+                          <h3 class="quote-subsection-title">Interior Design</h3>
+                        </div>
+
+                        <div class="quote-field-grid">
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Property Type <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Property type">
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="1 BHK"><span>1 BHK</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="2 BHK"><span>2 BHK</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="3 BHK"><span>3 BHK</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="4+ BHK"><span>4+ BHK</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="Villa"><span>Villa</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="Office / Commercial"><span>Office / Commercial</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeInterior"
+                                  value="Other"><span>Other</span></label>
+                            </div>
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qInteriorArea">Approximate Area (sq. ft.)</label>
+                            <input type="text" id="qInteriorArea" name="areaInterior" class="quote-input"
+                              placeholder="e.g. 1200">
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qRoomsSpaces">Rooms / Spaces to be Designed</label>
+                            <input type="text" id="qRoomsSpaces" name="roomsSpaces" class="quote-input"
+                              placeholder="e.g. Living room, 2 bedrooms">
+                          </div>
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Interior Requirement <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Interior requirement">
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Full Home"><span>Full Home</span></label>
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Kitchen"><span>Kitchen</span></label>
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Living Room"><span>Living Room</span></label>
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Bedroom"><span>Bedroom</span></label>
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Office"><span>Office</span></label>
+                              <label class="quote-pill"><input type="radio" name="interiorRequirement"
+                                  value="Other"><span>Other</span></label>
+                            </div>
+                          </div>
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Preferred Style <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Preferred style">
+                              <label class="quote-pill"><input type="radio" name="preferredStyle"
+                                  value="Modern"><span>Modern</span></label>
+                              <label class="quote-pill"><input type="radio" name="preferredStyle"
+                                  value="Minimal"><span>Minimal</span></label>
+                              <label class="quote-pill"><input type="radio" name="preferredStyle"
+                                  value="Contemporary"><span>Contemporary</span></label>
+                              <label class="quote-pill"><input type="radio" name="preferredStyle"
+                                  value="Traditional"><span>Traditional</span></label>
+                              <label class="quote-pill"><input type="radio" name="preferredStyle"
+                                  value="Not Sure"><span>Not Sure</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Solar Solutions -->
+                      <div class="quote-subsection" data-service="solar" hidden>
+                        <div class="quote-subsection-head">
+                          <span class="quote-subsection-icon"><i class="fa-solid fa-solar-panel"
+                              aria-hidden="true"></i></span>
+                          <h3 class="quote-subsection-title">Solar Solutions</h3>
+                        </div>
+
+                        <div class="quote-field-grid">
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Property Type <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Property type">
+                              <label class="quote-pill"><input type="radio" name="propertyTypeSolar"
+                                  value="Residential"><span>Residential</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeSolar"
+                                  value="Commercial"><span>Commercial</span></label>
+                              <label class="quote-pill"><input type="radio" name="propertyTypeSolar"
+                                  value="Industrial"><span>Industrial</span></label>
+                            </div>
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qElectricityBill">Average Monthly Electricity Bill</label>
+                            <input type="text" id="qElectricityBill" name="electricityBill" class="quote-input"
+                              placeholder="e.g. ₹4,500">
+                          </div>
+                          <div class="quote-field">
+                            <label class="quote-label" for="qSolarCapacity">Required Solar Capacity <span
+                                class="quote-optional">(if known)</span></label>
+                            <input type="text" id="qSolarCapacity" name="solarCapacity" class="quote-input"
+                              placeholder="e.g. 5 kW">
+                          </div>
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Roof Type <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Roof type">
+                              <label class="quote-pill"><input type="radio" name="roofType"
+                                  value="Concrete"><span>Concrete</span></label>
+                              <label class="quote-pill"><input type="radio" name="roofType"
+                                  value="Metal"><span>Metal</span></label>
+                              <label class="quote-pill"><input type="radio" name="roofType"
+                                  value="Other"><span>Other</span></label>
+                              <label class="quote-pill"><input type="radio" name="roofType"
+                                  value="Not Sure"><span>Not Sure</span></label>
+                            </div>
+                          </div>
+                          <div class="quote-field is-full">
+                            <span class="quote-label">Solar Requirement <span class="quote-optional">(optional)</span></span>
+                            <div class="quote-pill-group" role="radiogroup" aria-label="Solar requirement">
+                              <label class="quote-pill"><input type="radio" name="solarRequirement"
+                                  value="On-grid"><span>On-grid</span></label>
+                              <label class="quote-pill"><input type="radio" name="solarRequirement"
+                                  value="Off-grid"><span>Off-grid</span></label>
+                              <label class="quote-pill"><input type="radio" name="solarRequirement"
+                                  value="Hybrid"><span>Hybrid</span></label>
+                              <label class="quote-pill"><input type="radio" name="solarRequirement"
+                                  value="Not Sure"><span>Not Sure</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Step 4: Budget & Timeline -->
+                    <div class="quote-step" data-step="4" hidden>
+                      <h2 class="quote-step-title">Budget &amp; Timeline</h2>
+                      <p class="quote-step-desc">A rough range helps us tailor the right proposal.</p>
+
+                      <div class="quote-field-grid">
+                        <div class="quote-field">
+                          <label class="quote-label" for="qBudget">Estimated Budget</label>
+                          <select id="qBudget" name="budget" class="quote-select">
+                            <option value="">Select a range</option>
+                            <option value="Below ₹5 Lakhs">Below ₹5 Lakhs</option>
+                            <option value="₹5–10 Lakhs">₹5–10 Lakhs</option>
+                            <option value="₹10–25 Lakhs">₹10–25 Lakhs</option>
+                            <option value="₹25–50 Lakhs">₹25–50 Lakhs</option>
+                            <option value="₹50 Lakhs–₹1 Crore">₹50 Lakhs–₹1 Crore</option>
+                            <option value="Above ₹1 Crore">Above ₹1 Crore</option>
+                            <option value="Not Sure">Not Sure</option>
+                          </select>
+                        </div>
+                        <div class="quote-field">
+                          <label class="quote-label" for="qTimeline">When are you planning to start?</label>
+                          <select id="qTimeline" name="timeline" class="quote-select">
+                            <option value="">Select timeline</option>
+                            <option value="Immediately">Immediately</option>
+                            <option value="Within 1 month">Within 1 month</option>
+                            <option value="1–3 months">1–3 months</option>
+                            <option value="3–6 months">3–6 months</option>
+                            <option value="More than 6 months">More than 6 months</option>
+                            <option value="Just exploring">Just exploring</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Step 5: Additional requirements + consent -->
+                    <div class="quote-step" data-step="5" hidden>
+                      <h2 class="quote-step-title">Additional Requirements</h2>
+                      <p class="quote-step-desc">Anything else that will help us prepare an accurate quote.</p>
+
+                      <div class="quote-field-grid">
+                        <div class="quote-field is-full">
+                          <label class="quote-label" for="qMessage">Tell us more about your project <span
+                              class="quote-optional">(optional)</span></label>
+                          <textarea id="qMessage" name="message" class="quote-textarea"
+                            placeholder="Share any details, references or specific requirements..."></textarea>
+                        </div>
+
+                        <div class="quote-field is-full" id="qFileField">
+                          <label class="quote-label" id="qFileLabel">Upload Project Documents / Floor Plan <span
+                              class="quote-optional">(optional)</span></label>
+                          <label class="quote-upload-dropzone" id="qFileDropzone" for="qFileInput" tabindex="0"
+                            role="button" aria-describedby="qFileHint">
+                            <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+                            <span class="quote-upload-title">Click to upload files</span>
+                            <span class="quote-upload-sub">PDF, JPG, PNG or DWG — up to 15MB each, 5 files max</span>
+                            <input type="file" id="qFileInput" name="documents[]" multiple
+                              accept=".pdf,.jpg,.jpeg,.png,.dwg" aria-labelledby="qFileLabel">
+                          </label>
+                          <ul class="quote-upload-list" id="qFileList"></ul>
+                          <span class="quote-hint" id="qFileHint">You can remove a file after adding it.</span>
+                          <span class="quote-error-msg"><i class="fa-solid fa-circle-exclamation"
+                              aria-hidden="true"></i><span></span></span>
+                        </div>
+
+                        <div class="quote-field is-full">
+                          <label class="quote-label" for="qHeardFrom">How did you hear about us? <span
+                              class="quote-optional">(optional)</span></label>
+                          <select id="qHeardFrom" name="hearAboutUs" class="quote-select">
+                            <option value="">Select an option</option>
+                            <option value="Google">Google</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Website">Website</option>
+                            <option value="Other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="quote-divider"></div>
+
+                      <div class="quote-consent" id="qConsentWrap">
+                        <input type="checkbox" id="qConsent" name="consent" required
+                          aria-describedby="qConsentError">
+                        <label for="qConsent">I agree to be contacted regarding my project and quotation
+                          request.</label>
+                      </div>
+                      <span class="quote-standalone-error" id="qConsentError" hidden><i
+                          class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><span>Please agree to be
+                          contacted to submit your request.</span></span>
+                    </div>
+
+                    <!-- nav -->
+                    <div class="quote-nav">
+                      <button type="button" id="qBackBtn" class="rr-btn btn-border hover-bg-theme" hidden>
+                        <span class="btn-wrap">
+                          <span class="text-one">Back</span>
+                          <span class="text-two">Back</span>
+                        </span>
+                      </button>
+                      <div class="quote-nav-spacer"></div>
+                      <button type="button" id="qNextBtn" class="rr-btn hover-bg-theme">
+                        <span class="btn-wrap">
+                          <span class="text-one">Next</span>
+                          <span class="text-two">Next</span>
+                        </span>
+                      </button>
+                      <button type="submit" id="qSubmitBtn" class="rr-btn hover-bg-theme quote-submit-btn" hidden>
+                        <span class="quote-spinner" aria-hidden="true"></span><span
+                          class="quote-submit-label">Get My Quote</span>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+
+                <!-- success panel -->
+                <div class="quote-success" id="qSuccessPanel" role="status" hidden>
+                  <div class="quote-success-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+                  <h2 class="quote-success-title">Thank you for your enquiry!</h2>
+                  <p class="quote-success-text">We've received your project details. Our team will review your
+                    requirements and contact you shortly.</p>
+                  <a href="index.html" class="rr-btn btn-border hover-bg-theme">
+                    <span class="btn-wrap">
+                      <span class="text-one">Back to Home</span>
+                      <span class="text-two">Back to Home</span>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- quote form area end -->
+
+      </main>
+
+      <!-- footer area start  -->
+      <footer class="footer-area">
+        <div class="container large">
+          <div class="footer-top-inner">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/images/logo-bisliv.svg" alt="site-logo" width="120" height="70"></a>
+            </div>
+            <div class="info-text">
+              <div class="text-wrapper">
+                <p class="text">Building, interior, and solar under one accountable team — from first sketch to switch-on.</p>
+              </div>
+               <div class="footer-cta-row">
+                <a href="contact.html" class="rr-btn hover-bg-theme">
+                  <span class="btn-wrap">
+                    <span class="text-one">Get Quote</span>
+                    <span class="text-two">Get Quote</span>
+                  </span>
+                </a>
+              </div>
+              <div class="info-link">
+                 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="footer-whatsapp" aria-label="Chat on WhatsApp">
+                  <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                    <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+                  </svg>
+                  <span>Whatsapp</span>
+                </a>
+                <a href="mailto:hello@bisliv.in" class="mailto-text">hello@bisliv.in</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="copyright-area">
+          <div class="copyright-area-inner">
+            <div class="copyright-text">
+              <p class="text">© 2026 BISliv. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer area end  -->
+
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/TextPlugin.js"></script>
+  <script src="assets/js/customEase.js"></script>
+  <script src="assets/js/Flip.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/matter.js"></script>
+  <script src="assets/js/throwable.js"></script>
+  <script src="assets/js/magiccursor.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js?v=1.0"></script>
+
+  <!-- Quote form logic -->
+  <script src="assets/js/quote-form.js?v=1.0"></script>
+
+</body>
+
+</html>

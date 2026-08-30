@@ -1,0 +1,107 @@
+/* Shared header customizations: left/right split + WhatsApp icon link.
+   Used on index.html and contact.html so the header stays identical site-wide. */
+
+.header-area__inner {
+  justify-content: space-between;
+}
+.header-area__inner > .header__right {
+  margin-inline-end: 0;
+}
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header__whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.header__whatsapp a:hover {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #fff;
+}
+.header__whatsapp svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+@media only screen and (max-width: 1199px) {
+  .header__whatsapp a {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+  .header__whatsapp svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mobile sticky CTA bar: once the header's WhatsApp/Get Quote buttons are
+   hidden on small screens, pin the same two actions to the viewport bottom.
+   Placed as a sibling of <header>, outside #smooth-wrapper, so it stays
+   fixed to the real viewport rather than GSAP ScrollSmoother's transformed
+   content (a transform creates a containing block that breaks position:fixed). */
+.mobile-sticky-cta {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .header__whatsapp,
+  .header__button {
+    display: none;
+  }
+  .mobile-sticky-cta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background-color: var(--white);
+    border-top: 1px solid var(--border);
+  }
+  .mobile-sticky-cta__whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--primary);
+    transition: all 0.3s ease;
+  }
+  .mobile-sticky-cta__whatsapp svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  .mobile-sticky-cta__whatsapp:hover,
+  .mobile-sticky-cta__whatsapp:active {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: #fff;
+  }
+  .mobile-sticky-cta__quote {
+    flex: 1;
+    justify-content: center;
+    padding: 16px 20px;
+  }
+  body {
+    padding-bottom: 76px;
+  }
+}

@@ -1,0 +1,38 @@
+/* Go-to-top button icon: replaces the Font Awesome arrow-up glyph that
+   style.css renders via .progress-wrap::after { content: "\f062"; font:
+   var(--fa-font-solid); } with a self-contained inline SVG, so this one
+   icon doesn't depend on the Font Awesome font. (Font Awesome itself stays
+   loaded — fa-times/fa-bars in the header and the whole quote-form wizard
+   on contact.html still use it.) */
+
+.progress-wrap::after {
+  content: none;
+}
+
+.progress-wrap__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  padding: 14px;
+  box-sizing: border-box;
+  color: var(--primary);
+  z-index: 1;
+  pointer-events: none;
+  transition: color 200ms linear;
+}
+.progress-wrap__icon line,
+.progress-wrap__icon polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.dark .progress-wrap__icon {
+  color: var(--black);
+}
+.light.progress-wrap .progress-wrap__icon {
+  color: var(--white);
+}

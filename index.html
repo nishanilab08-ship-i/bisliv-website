@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en" data-cursor="c1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BISliv designs and builds homes, fits out interiors, and installs solar power — one accountable team from foundation to switch-on.">
+
+  <title>BISliv — Building. Interior. Solar.</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/magnific-popup.css">
+  <link rel="stylesheet" href="assets/animate.min.css">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/style.css?v=1.0">
+  <link rel="stylesheet" href="assets/header-custom.css">
+  <link rel="stylesheet" href="assets/footer-custom.css">
+  <link rel="stylesheet" href="assets/hero-custom.css">
+  <link rel="stylesheet" href="assets/scroll-top-custom.css">
+
+</head>
+
+
+<body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
+
+  <!-- custom-cursor -->
+  <div class="custom-cursor">
+    <img src="assets/images/cursor.svg" alt="cursor" id="cursorImg">
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+    <svg class="progress-wrap__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </div>
+
+  <!-- cursorAnimation start -->
+  <div class="cursor-wrapper relative">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+  </div>
+  <!-- cursorAnimation end -->
+
+  <!-- side toggle start -->
+  <aside class="fix">
+    <div class="side-info">
+      <div class="side-info-content">
+        <div class="offset-widget offset-header">
+          <div class="offset-logo">
+            <a href="index.html">
+              <img src="assets/images/" alt="site logo">
+            </a>
+          </div>
+          <button id="side-info-close" class="side-info-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mobile-menu d-xl-none fix"></div>
+        <div class="offset-button">
+          <a href="contact.html" class="rr-btn hover-bg-theme">
+            <span class="btn-wrap">
+              <span class="text-one">Get Quote</span>
+              <span class="text-two">Get Quote</span>
+            </span>
+          </a>
+        </div>
+      
+      </div>
+    </div>
+  </aside>
+  <div class="offcanvas-overlay"></div>
+  <!-- side toggle end -->
+
+  <!-- Header area start -->
+  <header class="header-area">
+    <div class="header-main">
+      <div class="container large">
+        <div class="header-area__inner">
+          <div class="header__left">
+            <div class="header__logo">
+              <a href="index.html">
+                <img src="assets/images/logo-bisliv.svg" class="normal-logo" alt="Site Logo" width="100" height="80">
+              </a>
+            </div>
+          </div>
+
+          <div class="header__right">
+            <div class="header__nav d-none d-xl-flex">
+              <nav class="main-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__whatsapp">
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="header__button">
+              <a href="contact.html" class="rr-btn hover-bg-theme">
+                <span class="btn-wrap">
+                  <span class="text-one">Get Quote</span>
+                  <span class="text-two">Get Quote</span>
+                </span>
+              </a>
+            </div>
+            <div class="header__navicon d-xl-none">
+              <button class="side-toggle">
+                <i class="fa-solid fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header area end -->
+
+  <!-- Mobile sticky CTA bar (WhatsApp + Get Quote) start -->
+  <div class="mobile-sticky-cta">
+    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta__whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+      </svg>
+    </a>
+    <a href="contact.html" class="mobile-sticky-cta__quote rr-btn hover-bg-theme">
+      <span class="btn-wrap">
+        <span class="text-one">Get Quote</span>
+        <span class="text-two">Get Quote</span>
+      </span>
+    </a>
+  </div>
+  <!-- Mobile sticky CTA bar end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <main>
+
+        <!-- hero area start  -->
+        <section class="hero-area">
+          <div class="herogrid"></div>
+          <div class="container large">
+            <div class="hero-area-inner section-spacing-top">
+              <div class="hero-content section-spacing-bottom">
+                <div class="award-wrapper fade-anim" data-delay="0.90" data-direction="left" data-ease="back.out(4)">
+                  <div class="circle-text-wrapper">
+                    <div class="circle-text">
+                      <img src="assets/images/left-rotate-icon.png" alt="image" class="text">
+                      <img src="assets/images/bislive-icon.png" alt="image" class="icon">
+                    </div>
+                  </div>
+                </div>
+                <div class="section-header">
+                  <div class="sheet-tag fade-anim" data-delay="0.2">
+                    <span class="sheet-tag__dash"></span>
+                    SHEET A-00 / COVER
+                  </div>
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">One team draws
+ the plan, pours the slab, and <span class="text-highlight">switches</span> on the power.</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-content">
+                  <div class="features-wrapper-box fade-anim" data-delay="0.75">
+                    <div class="features-wrapper">
+                      <div class="feature-box">
+                        <div class="content">
+                          <span class="number">98%</span>
+                          <p class="text">Average clients satisfied
+                            and repeating</p>
+                        </div>
+                      </div>
+                      <div class="feature-box">
+                        <div class="content">
+                          <span class="number">120+</span>
+                          <p class="text">Successfully projects done
+                            in 24 countries</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-wrapper fade-anim" data-delay="0.75">
+                    <p class="text">We’re a digital products design & development agency that works passionately
+                      with the digital experiences.</p>
+                  </div>
+                </div>
+              </div>
+            <div class="big-text-wrapper" style="cursor: none;">
+                <h2 class="big-text" style="cursor: none;"><img src="assets/images/bisliv-visual.svg" width="" height="" style="cursor: none;margin-bottom: -10px;">
+                </h2>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- hero area end  -->
+
+        <!-- about area start  -->
+        <section class="about-area">
+          <div class="container large">
+            <div class="about-area-inner section-spacing">
+              <div class="section-content">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title"><img src="assets/images/logo-bisliv.svg" alt="logo" width="520" height="150"></h2>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="text">BISliv is a single accountable contractor for construction, interior fit-out, and rooftop solar — so your build, your rooms, and your power bill are designed as one project, not three vendors.</p>
+                </div>
+                <div class="btn-wrapper ">
+                  <a href="contact.html" class="rr-btn  btn-text-fli hover-bg-theme">
+                    <span class="btn-wrap">
+                      <span class="text-one">Learn More</span>
+                      <span class="text-two">Learn More</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about area end  -->
+
+        <!-- video-box  start -->
+        <div class="video-box">
+          <img src="assets/images/bisliv-kitchen.jpeg"/>
+        </div>
+        <!-- video-box  end -->
+
+        
+
+        <!-- service area start  -->
+        <section class="service-area">
+          <div class="container large">
+            <div class="service-area-inner section-spacing">
+              <div class="section-header">
+                <div class="section-title-wrapper fade-anim">
+                  <div class="title-wrapper">
+                    <h2 class="section-title font-instrumentsans-medium word-anim">Three trades. One drawing set. Zero handoff gaps.</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="services-wrapper-box">
+                <div class="services-wrapper-1">
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(01)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a>Build</a></h3>
+                      <p>Structural construction from foundation to finish — houses, extensions, and small commercial builds, engineered and built by our own site crews.</p>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/images/bisliv-kitchen.jpeg" alt="image">
+                    </div>
+                  </div>
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(02)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a>Interior</a></h3>
+                     <p>Full fit-out and space planning for homes and offices — modular kitchens, wardrobes, false ceilings, and finishes, made to measure.</p>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/images/bisliv-room3.jpeg" alt="image">
+                    </div>
+                  </div>
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(03)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a>Solar</a></h3>
+                      <p>Rooftop solar design and installation with subsidy paperwork handled for you — sized to your actual usage, not oversold.</p>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/images/bisliv-solar.png" alt="image">
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- service area end  -->
+
+        <!-- funfact area start  -->
+        <section class="funfact-area fade-anim">
+          <div class="container large">
+            <div class="funfact-area-inner pin-area">
+              <div class="section-header section-spacing-top pin-element">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title font-instrumentsans-medium word-anim">How a BISliv project actually runs</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="funfact-wrapper-box section-spacing">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+                <span class="line-4"></span>
+                <div class="funfact-wrapper">
+                  <div class="funfact-item go-visible">
+                    <span class="number">Site visit & brief</span>
+                    <p class="text">We survey the plot or existing space, understand budget and timeline, and note load requirements for solar.</p>
+                  </div>
+                  <div class="funfact-item go-visible">
+                    <span class="number">Design & quote</span>
+                    <p class="text">Layout, interior concept, and solar sizing are drawn together, with one itemised quote covering all three.</p>
+                  </div>
+                  <div class="funfact-item go-visible">
+                    <span class="number">Build</span>
+                    <p class="text">Our site crew executes structural work with weekly progress photos shared to your phone.</p>
+                  </div>
+                  <div class="funfact-item go-visible">
+                    <span class="number">Fit-out & install</span>
+                    <p class="text">Interior fit-out and solar mounting run in parallel toward the end of the build to save weeks.</p>
+                  </div>
+                  <div class="funfact-item go-visible">
+                    <span class="number">Handover & power-on</span>
+                    <p class="text">Average 99% clients satisfaction
+                      with expertise.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- funfact area end  -->
+
+        
+
+      
+
+        <!-- productivity area start  -->
+        <section class="productivity-area">
+          <div class="container large">
+            <div class="productivity-area-inner section-spacing">
+              <div class="section-content">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title font-instrumentsans-medium word-anim">Tell us what you're building. We'll send a site-visit slot within 48 hours.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- productivity area end  -->
+
+        <div class="image-wrapper parallax-view">
+          <img class="w-100" src="assets/images/bisliv-kitchen2.jpeg" alt="image" data-speed="0.1">
+        </div>
+
+      </main>
+
+      <!-- footer area start  -->
+      <footer class="footer-area">
+        <div class="container large">
+          <div class="footer-top-inner">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/images/logo-bisliv.svg" alt="site-logo" width="120" height="70"></a>
+            </div>
+            <div class="info-text">
+              <div class="text-wrapper">
+                <p class="text">Building, interior, and solar under one accountable team — from first sketch to switch-on.</p>
+              </div>
+               <div class="footer-cta-row">
+                <a href="contact.html" class="rr-btn hover-bg-theme">
+                  <span class="btn-wrap">
+                    <span class="text-one">Get Quote</span>
+                    <span class="text-two">Get Quote</span>
+                  </span>
+                </a>
+              </div>
+              <div class="info-link">
+                 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="footer-whatsapp" aria-label="Chat on WhatsApp">
+                  <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                    <path d="M16.004 3C9.06 3 3.42 8.64 3.42 15.58c0 2.29.6 4.44 1.74 6.36L3 29l7.24-2.1a12.5 12.5 0 0 0 5.76 1.42h.005c6.94 0 12.58-5.64 12.58-12.58C28.585 8.64 22.945 3 16.004 3zm0 22.9h-.004a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.83 1.11 1.13-3.73-.25-.39a10.32 10.32 0 0 1-1.58-5.51c0-5.72 4.66-10.38 10.4-10.38 2.78 0 5.39 1.08 7.35 3.05a10.31 10.31 0 0 1 3.05 7.35c0 5.72-4.66 10.38-10.4 10.38zm5.7-7.78c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.83.39-.29.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.02 1.27 3.23.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.74.24 1.42.2 1.95.12.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36z"/>
+                  </svg>
+                  <span>Whatsapp</span>
+                </a>
+                <a href="mailto:hello@bisliv.in" class="mailto-text">hello@bisliv.in</a>
+              </div>
+             
+            </div>
+          </div>
+
+        </div>
+        <div class="copyright-area">
+          <div class="copyright-area-inner">
+            <div class="copyright-text">
+              <p class="text">© 2026 BISliv. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer area end  -->
+
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/TextPlugin.js"></script>
+  <script src="assets/js/customEase.js"></script>
+  <script src="assets/js/Flip.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/matter.js"></script>
+  <script src="assets/js/throwable.js"></script>
+  <script src="assets/js/magiccursor.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js?v=1.0"></script>
+
+  <script>
+    var footerHomeLink = document.getElementById('footerHomeLink');
+    if (footerHomeLink) {
+      footerHomeLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        jQuery('html, body').animate({ scrollTop: 0 }, 550);
+      });
+    }
+
+    if (document.querySelector('.big-text-slider')) {
+      new Swiper('.big-text-slider', {
+        slidesPerView: 'auto',
+        loop: true,
+        spaceBetween: 40,
+        speed: 8000,
+        allowTouchMove: false,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+      });
+    }
+  </script>
+
+</body>
+
+</html>

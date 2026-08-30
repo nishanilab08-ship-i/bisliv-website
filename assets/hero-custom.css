@@ -1,0 +1,59 @@
+/* Hero heading: blueprint-style "sheet" tag above the title, and an accent
+   highlight on "switches" (var(--action), the template's existing orange
+   accent token — same idea as the reference mock, colors adapted to this
+   hero's light background instead of the mock's dark one). */
+.hero-area .sheet-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  /* font-family: "Oswald", sans-serif; */
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #000;
+}
+.hero-area .sheet-tag__dash {
+  width: 22px;
+  height: 1px;
+  background-color: currentColor;
+  display: inline-block;
+}
+.hero-area .section-title .text-highlight {
+  color: #f44142;
+}
+
+/* Hero big-text: a continuous marquee cycling "Builder . Interior . Solar ."
+   via Swiper, replacing the static line. slidesPerView:'auto' + linear
+   transition-timing-function is the same technique the template's own
+   (unused) .text-slider marquee uses, so motion stays constant-speed
+   instead of easing in/out between slides. Only shown at the same
+   breakpoint the original static text was shown at (>=1200px). */
+
+.big-text-wrapper .big-text-slider {
+  width: 100%;
+  height: 110px; /* .big-text font-size 100px * line-height 1.1 */
+  overflow: hidden;
+}
+.big-text-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.big-text-slider .swiper-slide {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.big-text-wrapper .big-text {
+  margin: 0;
+  white-space: nowrap;
+}
+.big-text-wrapper .big-text .big-text-dot {
+  margin-inline-start: 24px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .big-text-wrapper {
+    display: none;
+  }
+}
