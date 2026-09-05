@@ -56,10 +56,7 @@
   display: none;
 }
 @media only screen and (max-width: 767px) {
-  .header__whatsapp,
-  .header__button {
-    display: none;
-  }
+
   .mobile-sticky-cta {
     display: flex;
     align-items: center;

@@ -52,8 +52,4 @@
   margin-inline-start: 24px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .big-text-wrapper {
-    display: none;
-  }
-}
+
