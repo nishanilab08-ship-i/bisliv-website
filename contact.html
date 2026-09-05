@@ -233,13 +233,17 @@
                     <span id="qErrorSummaryText"></span>
                   </div>
 
-                  <form id="quoteForm" novalidate method="post" action="send-quote.php" enctype="multipart/form-data">
+                  <form id="quoteForm" novalidate method="post" action="https://formspree.io/f/YOUR_FORM_ID" enctype="multipart/form-data">
 
                     <!-- Honeypot: hidden from real visitors, bots tend to fill every field. -->
+                    <!-- Formspree recognizes a field named "_gotcha" as its built-in spam trap. -->
                     <div style="position:absolute;left:-9999px;top:-9999px;opacity:0;" aria-hidden="true">
                       <label for="qWebsite">Leave this field empty</label>
-                      <input type="text" id="qWebsite" name="website" tabindex="-1" autocomplete="off">
+                      <input type="text" id="qWebsite" name="_gotcha" tabindex="-1" autocomplete="off">
                     </div>
+
+                    <!-- Custom email subject line for Formspree notification emails -->
+                    <input type="hidden" name="_subject" value="New quote request from BISliv website">
 
                     <!-- Step 1: Contact Details -->
                     <div class="quote-step" data-step="1">
@@ -603,23 +607,6 @@
                               class="quote-optional">(optional)</span></label>
                           <textarea id="qMessage" name="message" class="quote-textarea"
                             placeholder="Share any details, references or specific requirements..."></textarea>
-                        </div>
-
-                        <div class="quote-field is-full" id="qFileField">
-                          <label class="quote-label" id="qFileLabel">Upload Project Documents / Floor Plan <span
-                              class="quote-optional">(optional)</span></label>
-                          <label class="quote-upload-dropzone" id="qFileDropzone" for="qFileInput" tabindex="0"
-                            role="button" aria-describedby="qFileHint">
-                            <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
-                            <span class="quote-upload-title">Click to upload files</span>
-                            <span class="quote-upload-sub">PDF, JPG, PNG or DWG — up to 15MB each, 5 files max</span>
-                            <input type="file" id="qFileInput" name="documents[]" multiple
-                              accept=".pdf,.jpg,.jpeg,.png,.dwg" aria-labelledby="qFileLabel">
-                          </label>
-                          <ul class="quote-upload-list" id="qFileList"></ul>
-                          <span class="quote-hint" id="qFileHint">You can remove a file after adding it.</span>
-                          <span class="quote-error-msg"><i class="fa-solid fa-circle-exclamation"
-                              aria-hidden="true"></i><span></span></span>
                         </div>
 
                         <div class="quote-field is-full">

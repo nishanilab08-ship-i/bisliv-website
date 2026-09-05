@@ -3,18 +3,13 @@
 
   var TOTAL_STEPS = 5;
   var STEP_LABELS = ["Contact", "Service", "Details", "Budget", "Finish"];
-  var MAX_FILES = 5;
-  var MAX_FILE_SIZE = 15 * 1024 * 1024; // 15MB
-  var ALLOWED_EXT = ["pdf", "jpg", "jpeg", "png", "dwg"];
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   var PHONE_RE = /^[0-9+\-\s()]{7,18}$/;
 
   var currentStep = 1;
-  var selectedFiles = [];
 
   var form, progressSteps, stepEls, backBtn, nextBtn, submitBtn,
     errorSummary, errorSummaryText, stepAnnounce, stepStatus,
-    fileInput, fileDropzone, fileList, fileErrorField,
     successPanel, formShell, serviceInputs, serviceError;
 
   function qs(sel, ctx) {
@@ -37,10 +32,6 @@
     errorSummaryText = qs("#qErrorSummaryText");
     stepAnnounce = qs("#qStepAnnounce");
     stepStatus = qs("#qStepStatus");
-    fileInput = qs("#qFileInput");
-    fileDropzone = qs("#qFileDropzone");
-    fileList = qs("#qFileList");
-    fileErrorField = qs("#qFileField");
     successPanel = qs("#qSuccessPanel");
     formShell = qs("#qFormShell");
     serviceInputs = qsa('input[name="service"]');
@@ -49,7 +40,6 @@
     bindNav();
     bindServiceCards();
     bindFieldErrorClearing();
-    bindFileUpload();
     bindSubmit();
 
     showStep(1, true);
@@ -306,98 +296,6 @@
 
   /* ---------------- file upload ---------------- */
 
-  function bindFileUpload() {
-    if (!fileInput) return;
-
-    fileDropzone.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        fileInput.click();
-      }
-    });
-
-    fileInput.addEventListener("change", function () {
-      var incoming = Array.prototype.slice.call(fileInput.files);
-      var errors = [];
-
-      incoming.forEach(function (file) {
-        var ext = file.name.split(".").pop().toLowerCase();
-        if (ALLOWED_EXT.indexOf(ext) === -1) {
-          errors.push(file.name + ": unsupported file type.");
-          return;
-        }
-        if (file.size > MAX_FILE_SIZE) {
-          errors.push(file.name + ": file exceeds 15MB.");
-          return;
-        }
-        if (selectedFiles.length >= MAX_FILES) {
-          errors.push("You can upload up to " + MAX_FILES + " files.");
-          return;
-        }
-        selectedFiles.push(file);
-      });
-
-      syncFileInput();
-      renderFileList();
-      showFileErrors(errors);
-    });
-  }
-
-  function syncFileInput() {
-    var dt = new DataTransfer();
-    selectedFiles.forEach(function (file) {
-      dt.items.add(file);
-    });
-    fileInput.files = dt.files;
-  }
-
-  function renderFileList() {
-    fileList.innerHTML = "";
-    selectedFiles.forEach(function (file, index) {
-      var li = document.createElement("li");
-
-      var name = document.createElement("span");
-      name.className = "quote-file-name";
-      name.textContent = file.name;
-
-      var size = document.createElement("span");
-      size.className = "quote-file-size";
-      size.textContent = formatBytes(file.size);
-
-      var removeBtn = document.createElement("button");
-      removeBtn.type = "button";
-      removeBtn.className = "quote-file-remove";
-      removeBtn.setAttribute("aria-label", "Remove " + file.name);
-      removeBtn.innerHTML = '<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
-      removeBtn.addEventListener("click", function () {
-        selectedFiles.splice(index, 1);
-        syncFileInput();
-        renderFileList();
-      });
-
-      li.appendChild(name);
-      li.appendChild(size);
-      li.appendChild(removeBtn);
-      fileList.appendChild(li);
-    });
-  }
-
-  function showFileErrors(errors) {
-    if (!fileErrorField) return;
-    if (errors.length) {
-      fileErrorField.classList.add("has-error");
-      qs(".quote-error-msg", fileErrorField).textContent = errors.join(" ");
-    } else {
-      fileErrorField.classList.remove("has-error");
-    }
-  }
-
-  function formatBytes(bytes) {
-    if (bytes < 1024) return bytes + " B";
-    if (bytes < 1024 * 1024) return Math.round(bytes / 1024) + " KB";
-    return (bytes / (1024 * 1024)).toFixed(1) + " MB";
-  }
-
   /* ---------------- submit ---------------- */
 
   function bindSubmit() {
@@ -421,7 +319,9 @@
 
       var formData = new FormData(form);
 
-      fetch(form.getAttribute("action") || "send-quote.php", {
+      // Formspree (https://formspree.io/f/...) — success is any 2xx response;
+      // on failure it returns JSON like { errors: [{ message: "..." }] }.
+      fetch(form.getAttribute("action"), {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" }
@@ -430,14 +330,14 @@
           return res
             .json()
             .catch(function () {
-              return { success: false, message: "" };
+              return {};
             })
             .then(function (data) {
               return { ok: res.ok, data: data };
             });
         })
         .then(function (result) {
-          if (result.ok && result.data && result.data.success) {
+          if (result.ok) {
             formShell.hidden = true;
             successPanel.hidden = false;
             var heading = qs(".quote-success-title", successPanel);
@@ -447,8 +347,9 @@
             }
             successPanel.scrollIntoView({ behavior: "smooth", block: "start" });
           } else {
+            var errs = result.data && result.data.errors;
             submitFailed(
-              (result.data && result.data.message) ||
+              (errs && errs[0] && errs[0].message) ||
                 "Sorry, something went wrong sending your request. Please try again."
             );
           }
