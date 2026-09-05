@@ -22,6 +22,9 @@
   --border: rgba(255, 255, 255, 0.1);
   --bg: #171717;
 }
+.tel-no{
+  text-decoration: underline;
+}
 .video-box{
   text-align: center;
 }
@@ -31342,11 +31345,33 @@ START: Footer CSS
   .it-copyright-area {
     padding: 40px 0;
   }
+  .info-address-num{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media only screen and (max-width:480px){
   .header-area .rr-btn{
     font-size: 12px;
     padding: 14px;
   }
+  .info-address-num{
+    align-items: flex-start;
+  }
+  .info-link {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: left;
+    margin-right: auto;
+}
+.mailto-text,.footer-whatsapp{
+  padding:0 !important;
+}
+}
+.mobile-sticky-cta{
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
