@@ -30,7 +30,7 @@
 .footer-whatsapp{
   text-decoration: none;
   border-radius: 40px;
-  padding:10px 20px  
+  padding:10px 20px
 }
 .footer-whatsapp:hover{
   color: #000;
@@ -81,5 +81,10 @@
 .footer-whatsapp:hover {
   background-color: #25D366;
   border-color: #25D366;
+  color: #fff;
+}
+.footer-instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-color: transparent;
   color: #fff;
 }
