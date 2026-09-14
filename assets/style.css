@@ -31362,13 +31362,10 @@ START: Footer CSS
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    flex-flow: column;
     text-align: left;
     margin-right: auto;
 }
-.mailto-text,.footer-whatsapp{
-  padding:0 !important;
-}
+
 }
 .mobile-sticky-cta{
   display: none !important;
